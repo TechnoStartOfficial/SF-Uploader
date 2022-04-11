@@ -34,5 +34,5 @@ def save_response_content(response, destination):
 
 if __name__ == "__main__":
     file_id =input("Enter File ID ")
-    destination = 'Blaze-v{version}-{device}-{buildDate}-{type}-OFFICIAL.zip'.format(version,device,buildDate,type)
+    destination = "Blaze-v%s-%s-%s-%s-OFFICIAL.zip"%(version,device,buildDate,type)
     download_file_from_google_drive(file_id, destination)
